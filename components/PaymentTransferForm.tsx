@@ -116,6 +116,7 @@ const PaymentTransferForm = ({ accounts }: PaymentTransferFormProps) => {
                       accounts={accounts}
                       setValue={form.setValue}
                       otherStyles="!w-full"
+                      type="transfer"
                     />
                   </FormControl>
                   <FormMessage className="text-12 text-red-500" />

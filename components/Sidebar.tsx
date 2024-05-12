@@ -48,7 +48,10 @@ const Sidebar = ({ user }: SiderbarProps) => {
        <PlaidLink user={user} />
        </nav>
 
-       <Footer user={user} type="desktop"/>
+       <div className='flex flex-col'>
+         <div className="border" />
+          <Footer user={user} type="desktop"/>
+       </div>
     </section>
   )
 }

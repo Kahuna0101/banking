@@ -196,6 +196,7 @@ declare interface BankDropdownProps {
   accounts: Account[];
   setValue?: UseFormSetValue<any>;
   otherStyles?: string;
+  type?: 'transfer' | 'history'
 }
 
 declare interface BankTabItemProps {
@@ -204,6 +205,7 @@ declare interface BankTabItemProps {
 }
 
 declare interface TotlaBalanceBoxProps {
+  user: User;
   accounts: Account[];
   totalBanks: number;
   totalCurrentBalance: number;

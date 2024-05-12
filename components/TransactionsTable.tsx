@@ -51,6 +51,12 @@ const TransactionsTable = ({ transactions }: TransactionTableProps) => {
                 <TableRow key={t.id} className={`${isDebit || amount[0] === '-' ? 'bg-[#fffbfa]' : 'bg-[#f6fef9]'} !hover:bg-none !border-b-default`}>
                    <TableCell className="max-w-[250px] pl-2 pr-10">
                     <div className="flex items-center gap-3">
+                        <div className="flex size-10 items-center justify-center rounded-full bg-blue-500">
+                          <p className="text-xl font-bold text-white">
+                            {t.name[0]}
+                          </p>
+
+                        </div>
                         <h1 className="text-14 truncate font-semibold text-[#344054]">
                             {removeSpecialCharacters(t.name)}
                         </h1>

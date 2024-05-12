@@ -18,6 +18,7 @@ export const BankDropdown = ({
   accounts = [],
   setValue,
   otherStyles,
+  type,
 }: BankDropdownProps) => {
   const searchParams = useSearchParams();
   const router = useRouter();
@@ -61,7 +62,7 @@ export const BankDropdown = ({
       >
         <SelectGroup>
           <SelectLabel className="py-2 font-normal text-gray-500">
-            Select a bank to display
+            Select a bank to {type === 'history' ? 'display' : 'transfer from'}
           </SelectLabel>
           {accounts.map((account: Account) => (
             <SelectItem
