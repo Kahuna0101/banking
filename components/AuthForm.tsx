@@ -102,6 +102,11 @@ const AuthForm = ({ type }: { type: string }) => {
               ? "Link your account to get started"
               : "Please enter your details"}
           </p>
+          <p className="text-16 font-normal text-gray-500">
+            {user
+              ? "Make use of these details to link a Testing Account: Username: user_good, Password: pass_good"
+              : ""}
+          </p>
         </div>
       </header>
       {user ? (
